@@ -5,6 +5,17 @@ icon: fa-users
 order: 4
 ---
 <script>
+    var password;
+  var pass1 = "hoangphan123";
+  var pass2 = "menglish";
+  var pass3 = "vietnamese";
+  password = prompt('Vui lòng nhập mật khẩu do admin cung cấp để xem danh sách giáo viên!', ' ');
+  if (password == pass1 || password == pass2 || password == pass3)
+    alert('Mật khẩu chính xác. Vui lòng nhấn OK để xem danh sách giáo viên!');
+  else {
+    alert('Mật khẩu không chính xác. Trang web sẽ đưa bạn về trang chủ.');
+    window.location = "/";
+  }
   function openTeacher(evt, country) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -61,7 +72,7 @@ order: 4
           <h5 style="font-weight: bold;">Nghe thử giọng:</h5>
           <audio controls>
             <source src="assets/audio/horse.mp3" type="audio/mpeg">
-          Trình duyệt không hỗ trợ.
+            Trình duyệt không hỗ trợ.
           </audio>
         </div>
       </div>
