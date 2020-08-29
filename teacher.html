@@ -1,0 +1,315 @@
+---
+layout: teachers
+title: Danh sách giáo viên
+icon: fa-users
+order: 4
+---
+<script>
+  function openTeacher(evt, country) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(country).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+<h2>Danh sách giáo viên</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openTeacher(event, 'filipino')">Philippines</button>
+  <button class="tablinks" onclick="openTeacher(event, 'vietnam')">Việt Nam</button>
+</div>
+
+<div id="filipino" class="tabcontent">
+  <h3 style="margin-top:30px;">Giáo viên Philippines (19)</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?girl" alt="Cathy" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Catherene Pedilla
+          <small>Nickname: Cathy (Nữ)</small>
+          <small>Kinh nghiệm: 7 năm</small>
+          <small>Thời gian dạy: Cả tuần</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            It is my pleasure to introduce myself. My name is Catherene D. Padilla, 29 years old and married. I have
+            been teaching English as an ESL teacher for 7 years man to man, 5 years online class. I possesses passion
+            and dedication to teaching foreign students. I’m friendly, lively and funny. Helping to develop students’
+            skills in English is my top priority. See you guys. Thanks.
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 2 - Chủ nhật (7AM - 4PM)
+          </p>
+          <h5 style="font-weight: bold;">Nghe thử giọng:</h5>
+          <audio controls>
+            <source src="assets/audio/horse.mp3" type="audio/mpeg">
+          Trình duyệt không hỗ trợ.
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?girls" alt="Liza" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Liza Gay Rojo
+          <small>Nickname: Liza (Nữ)</small>
+          <small>Kinh nghiệm: 7 năm</small>
+          <small>Thời gian dạy: Buổi tối trong tuần</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            Everyone desires excellent quality education. I’m Liza and here to give you the best of my knowledge and
+            experience to help you achieve your dreams. I took bachelor’s degree in Hospitality management, graduated in
+            2012. I hope to see you in the class. thanks
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 2 - Thứ 6 (6PM - 10PM)
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="assets/images/teacher-profile/nella.png" alt="ernellaa" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Ernella Dalumpines
+          <small>Nickname: Nella (Nữ)</small>
+          <small>Kinh nghiệm: 5 năm</small>
+          <small>Thời gian dạy: Buổi chiều trong tuần</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            Hello, learning English is a great investment in the future. I’m teacher Nela teaching ESL for 5 years and 4
+            years online classes. I had been explore different types of student’s learning style, strenth and
+            weaknesses. I graduated Bachelor in Secondary Education major in Technology and livelihood education,
+            currently on the completion of Master’s Degree. Have fun and see you guys all. Thanks
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 2 - Thứ 6 (12PM - 5PM)
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="assets/images/teacher-profile/Novem-Rosales-Clarito.jpg" alt="Novem" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Novem Rosales Clarito
+          <small>Nickname: Nov (Nam)</small>
+          <small>Kinh nghiệm: 4 năm</small>
+          <small>Thời gian dạy: Buổi sáng trong tuần</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            Chưa cung cấp
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 2 - Thứ 6 (7AM - 11AM)
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="assets/images/teacher-profile/vic.jpg" alt="Vic" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Vicmar Sarad
+          <small>Nickname: Vic (Nữ)</small>
+          <small>Kinh nghiệm: 6 năm</small>
+          <small>Thời gian dạy: Buổi chiều trong tuần</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            Hello, I’m teacher Vicmar graduated Bachelor’s in Secondary Education major in English and currently
+            studying master’s degree in education. Teaching is my passion and life.. so i am excited to seeing youo
+            guys.. have fun learning English and see you very soon. Thank you
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 2 - Thứ 6 (2PM - 10PM)
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="assets/images/teacher-profile/Alex.jpg" alt="Alex" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Alex Escanillan
+          <small>Nickname: Alex (Nữ)</small>
+          <small>Kinh nghiệm: 9 năm</small>
+          <small>Thời gian dạy: Sáng thứ 4 và thứ 5</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          <hr>
+          <h5 style="font-weight: bold;">Giới thiệu:</h5>
+          <p>
+            Learning English nowadays is getting more significant. It is a way to understand the world’s demand. I am
+            teacher Alex teaching esl for almost 9 years in both offline and online classes. It is more challenging for
+            me to have a new learning envirinment. Looking forward to meeting you very soon. Wish you enjoy ang having
+            fun in the class. Thank you all
+          </p>
+          <h5 style="font-weight: bold;">Lịch dạy:</h5>
+          <p>
+            Thứ 4 - Thứ 5 (10AM - 11AM)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="vietnam" class="tabcontent">
+  <h3 style="margin-top:30px;">Giáo viên Việt Name (3)</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Catherene Pedilla
+          <small>Image from unsplash.com</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          It is my pleasure to introduce myself. My name is Catherene D. Padilla, 29 years old and married. I have been
+          teaching English as an ESL teacher for 7 years man to man, 5 years online class. I possesses passion and
+          dedication to teaching foreign students. I’m friendly, lively and funny. Helping to develop students’ skills
+          in English is my top priority. See you guys. Thanks.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're
+          not available etc.
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're
+          not available etc.
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
