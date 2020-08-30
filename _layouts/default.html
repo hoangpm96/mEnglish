@@ -3,7 +3,6 @@
 	{%- include head.html -%}
 	<body>
 		{{- content -}}
-		{%- include footer.html -%}
 		<div id="fb-root"></div>
 		<div class="fb-customerchat"
 		page_id="158494498147595"
@@ -26,6 +25,6 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
 	   </script>
-
+		{%- include footer.html -%}
 	</body>
 </html>
